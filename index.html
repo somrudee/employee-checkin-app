@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบเช็คอิน/เช็คเอาต์พนักงาน</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ระบบเช็คอิน/เช็คเอาต์</h1>
+        <div class="status-display">
+            <p>สถานะปัจจุบัน: <span id="currentStatus">ไม่ได้เช็คอิน</span></p>
+            <p>เวลาปัจจุบัน: <span id="currentTime"></span></p>
+        </div>
+        <div class="buttons">
+            <button id="checkInBtn">เช็คอิน</button>
+            <button id="checkOutBtn" disabled>เช็คเอาต์</button>
+        </div>
+
+        <div class="section">
+            <h2>บันทึกการเข้างาน</h2>
+            <table id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>วันที่</th>
+                        <th>เวลาเช็คอิน</th>
+                        <th>เวลาเช็คเอาต์</th>
+                        <th>สถานะ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="section late-alerts" id="lateAlerts">
+            <h2>การแจ้งเตือน</h2>
+            </div>
+
+        <div class="section task-reminder" id="taskReminder">
+            <h2>แจ้งเตือนงานค้าง</h2>
+            <p>ยังไม่มีการแจ้งเตือนงานค้าง</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
