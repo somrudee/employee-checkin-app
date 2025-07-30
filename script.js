@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const lateAlertsDiv = document.getElementById('lateAlerts');
     const taskReminderDiv = document.getElementById('taskReminder');
 
-    // กำหนดเวลาทำงาน (ตัวอย่าง: เริ่ม 09:00, เลิก 17:00)
-    const WORK_START_HOUR = 9;
+    // กำหนดเวลาทำงาน (ตัวอย่าง: เริ่ม 08:00, เลิก 17:00)
+    const WORK_START_HOUR = 8;
     const WORK_START_MINUTE = 0;
     const WORK_END_HOUR = 17;
     const WORK_END_MINUTE = 0;
